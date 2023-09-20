@@ -1,10 +1,10 @@
 - hosts: all
   tasks:
-  - name: stop container
-    shell: docker container stop prashanth-container
-  - name: remove container
-    shell: docker rm container prashanth-container
-  - name: delete image
-    shell: docker rmi prashanthallamvarma/docker_project
+  #- name: stop container
+  #  shell: docker container stop prashanth-container
+  #- name: remove container
+  #  shell: docker rm container prashanth-container
+  #- name: delete image
+  #  shell: docker rmi prashanthallamvarma/docker_project
   - name: create continer
     shell: docker run -itd --name prashanth-container -p 9000:80 prashanthallamvarma/docker_project
